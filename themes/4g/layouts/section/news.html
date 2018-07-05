@@ -1,0 +1,20 @@
+{{ partial "header.html" . }}
+
+<div class="row">
+    <div class="large-10 columns">
+
+    	{{ range (.Paginator 10).Pages }}
+    		<div class="item">
+	    		{{ .Date.Format "Jan 2, 2006" }} {{ .Content }}
+	        </div>
+	    {{ end }}
+
+
+	    {{ partial "paginations.html" . }}
+	</div>
+	<div class="large-2 columns">
+        {{ partial "ad/sidebar.html" }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}

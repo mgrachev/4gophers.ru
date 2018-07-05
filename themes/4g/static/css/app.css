@@ -1,0 +1,75 @@
+#logo {
+	margin: 1rem;
+	text-align: left;
+}
+
+.main-menu{
+	width: 18rem;
+}
+
+.item {
+	margin-top: 3rem;
+}
+
+
+h2.title {
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+	text-align: center;
+}
+
+div.footer {
+	padding: 1rem 0 2rem 0;
+}
+
+div.pagination {
+	text-align: center;
+	margin-top: 5rem;
+}
+
+div.date {
+	padding-top: 1rem;
+}
+
+.share-row {
+	margin-bottom: 3rem;
+	margin-top: 3rem;
+}
+
+.logo-img {
+	width: 15rem;
+}
+
+pre {
+	margin-bottom: 1rem;
+}
+
+div.article img {
+	display: block;
+    margin: 0 auto;
+}
+
+div.ad {
+	text-align: center;
+	margin-top: 8rem;
+}
+
+div.ad img.banner {
+	width: 10rem;
+}
+
+div.tags {
+	margin-top: 8rem;
+}
+
+div.tags ul li{
+	list-style: none;
+}
+
+h4, h3 {
+	margin-top: 2rem;
+}
+
+div.data {
+	margin-top: 3rem;
+}

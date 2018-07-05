@@ -1,0 +1,7 @@
+baseurl = "http://4gophers.ru"
+title = "4gophers"
+languageCode = "ru-ru"
+theme="4g"
+
+[params]
+	disableRSS = false

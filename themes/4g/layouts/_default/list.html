@@ -1,0 +1,28 @@
+{{ partial "header.html" . }}
+
+<div class="row">
+    <div class="large-10 columns">
+
+    	{{ range (.Paginator 10).Pages }}
+    		<div class="item">
+	    		<h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+		        {{ .Summary }}
+	        </div>
+	    {{ end }}
+
+
+	    {{ partial "paginations.html" . }}
+	</div>
+	<div class="large-2 columns">
+		<div class="tags">
+			<ul id="all-tags">
+				{{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+					<li><a href="{{ "/tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a></li>
+				{{ end }}
+			</ul>
+		</div>
+        {{ partial "ad/sidebar.html" }}
+    </div>
+</div>
+
+{{ partial "footer.html" . }}
