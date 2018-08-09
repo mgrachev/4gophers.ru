@@ -2,17 +2,6 @@
 
 <div class="row">
     <div class="large-8 columns">
-    	{{ range (first 6  (where .Data.Pages "Type" "articles"))  }}
-    		<div class="item">
-	    		<h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
-		        {{ .Summary }}
-	        </div>
-	    {{ end }}
-
-		<div class="item">
-			<a href="/articles">Все статьи</a>
-		</div>
-	    
 	    	<div class="item">
 			<!-- Yandex.RTB R-A-288798-1 -->
 			<div id="yandex_rtb_R-A-288798-1"></div>
@@ -35,6 +24,17 @@
 			    })(this, this.document, "yandexContextAsyncCallbacks");
 			</script>
 	    	</div>
+	    
+    	{{ range (first 6  (where .Data.Pages "Type" "articles"))  }}
+    		<div class="item">
+	    		<h4><a href="{{ .RelPermalink }}">{{ .Title }}</a></h4>
+		        {{ .Summary }}
+	        </div>   
+	{{ end }}
+
+		<div class="item">
+			<a href="/articles">Все статьи</a>
+		</div>
 		
 		<div class="item">
 			<p>Теги:</p>
