@@ -52,7 +52,7 @@ type Context interface {
 
 <p>Пакет <code>context</code> предоставляет возможность производить новые значения <code>Context</code> из существующего. Все эти значения образуют дерево и в случае отмены родительского <code>Context</code> все производные тоже будут отменены.</p>
 
-<p><code>Background</code> это корень для всего дерева `Context и он никогда не отменяется:</p>
+<p><code>Background</code> это корень для всего дерева <code>Context</code> и он никогда не отменяется:</p>
 
 <pre>
 <code>// Background возвращает пустой Context. Он никогда не будет отменен и не имеет deadline
